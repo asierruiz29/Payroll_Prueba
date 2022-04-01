@@ -6,6 +6,11 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+import lombok.Builder;
+import lombok.Data;
+
+@Data
+@Builder
 @Entity
 class Employee {
 
@@ -13,7 +18,7 @@ class Employee {
   private String name;
   private String role;
 
-  Employee() {}
+  /*Employee() {}
 
   Employee(String name, String role) {
 
@@ -65,5 +70,5 @@ class Employee {
   @Override
   public String toString() {
     return "Employee{" + "id=" + this.id + ", name='" + this.name + '\'' + ", role='" + this.role + '\'' + '}';
-  }
+  }*/
 }
